@@ -7,7 +7,7 @@ while (true)
     try
     {
         //Menu
-        Console.WriteLine($"1 - Autorizar App");
+        Console.WriteLine($"1 - Autorizar App\n");
 
         switch (Convert.ToInt32(Console.ReadLine()))
         {

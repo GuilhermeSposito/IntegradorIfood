@@ -25,20 +25,20 @@ internal class Ifood
                     });
 
                 HttpResponseMessage response = await client.PostAsync($"{url}userCode", formData);
+                if (!response.IsSuccessStatusCode)
+                {
+                    throw new HttpRequestException("\nErro ao acessar o user code\n");
+                }
+
                 string jsonContent = await response.Content.ReadAsStringAsync();
                 UserCodeReturnFromAPI codesOfVerif = JsonSerializer.Deserialize<UserCodeReturnFromAPI>(jsonContent);
 
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Conecção feita com sucesso, peça para o Cliente colocar o código {codesOfVerif.userCode} no portal do parceito. Assim que ele colocar De ok!");
+                Console.WriteLine($"\nConecção feita com sucesso, peça para o Cliente colocar o código {codesOfVerif.userCode} no portal do parceito. E Depois coloque o código que o ifood retorna para ele!!\n");
                 Console.ForegroundColor = ConsoleColor.White;
 
-                Console.WriteLine($"userCode: {codesOfVerif.userCode}" +
-                    $"\nauthorizationCodeVerifier: {codesOfVerif.authorizationCodeVerifier}" +
-                    $"\nverificationUrl: {codesOfVerif.verificationUrl} " +
-                    $"\nverificationUrlComplete: {codesOfVerif.verificationUrlComplete}" +
-                    $"\nexpiresIn: {codesOfVerif.expiresIn}");
 
-                Console.WriteLine("\n Insira o código gerado pelo ifood!");
+                Console.WriteLine("\n Insira o código gerado pelo ifood!\n");
 
                 string? codeFromMenu = Console.ReadLine();
 
@@ -55,17 +55,16 @@ internal class Ifood
                 HttpResponseMessage responseWithToken = await client.PostAsync($"{url}token", formDataToGetTheToken);
                 if (!responseWithToken.IsSuccessStatusCode)
                 {
-                    throw new HttpRequestException();
+                    throw new HttpRequestException("\nErro ao acessar o token de acesso\n");
                 }
 
                 string jsonObjTokenFromAPI = await responseWithToken.Content.ReadAsStringAsync();
-                Token propAPIWithToken = JsonSerializer.Deserialize<Token>(jsonObjTokenFromAPI);
+                Token propriedadesAPIWithToken = JsonSerializer.Deserialize<Token>(jsonObjTokenFromAPI);
 
-                Token.TokenDaSessao = propAPIWithToken.accessToken;
+                Token.TokenDaSessao = propriedadesAPIWithToken.accessToken;
 
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Acesso Aceito");
-                Console.WriteLine($"Token Atual da Sessão: \n {Token.TokenDaSessao}");
+                Console.WriteLine("\nAcesso Aceito\n");
                 Console.ForegroundColor = ConsoleColor.White;
             }
 

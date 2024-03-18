@@ -12,3 +12,4 @@ C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfo
 C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.pdb
 C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.genruntimeconfig.cache
 C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ref\ProjetoIntegradorIfood.dll
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.sourcelink.json
