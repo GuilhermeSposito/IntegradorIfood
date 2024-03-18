@@ -2,10 +2,10 @@
 using ProjetoIntegradorIfood.ClassesAuxiliares;
 using ProjetoIntegradorIfood.data;
 Console.ForegroundColor = ConsoleColor.White;
-//if(Token.TokenDaSessao != null)
-//{
+if(Token.TokenDaSessao != null)
+{
     Ifood.SetTimer();
-//}
+}
 
 
 while (true)
