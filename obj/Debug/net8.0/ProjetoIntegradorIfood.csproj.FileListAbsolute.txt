@@ -1,0 +1,14 @@
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\bin\Debug\net8.0\ProjetoIntegradorIfood.exe
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\bin\Debug\net8.0\ProjetoIntegradorIfood.deps.json
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\bin\Debug\net8.0\ProjetoIntegradorIfood.runtimeconfig.json
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\bin\Debug\net8.0\ProjetoIntegradorIfood.dll
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\bin\Debug\net8.0\ProjetoIntegradorIfood.pdb
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.AssemblyInfoInputs.cache
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.AssemblyInfo.cs
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.csproj.CoreCompileInputs.cache
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.dll
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\refint\ProjetoIntegradorIfood.dll
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.pdb
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ProjetoIntegradorIfood.genruntimeconfig.cache
+C:\Users\gui-c\OneDrive\Área de Trabalho\ProjetoIntegrador\ProjetoIntegradorIfood\ProjetoIntegradorIfood\obj\Debug\net8.0\ref\ProjetoIntegradorIfood.dll
