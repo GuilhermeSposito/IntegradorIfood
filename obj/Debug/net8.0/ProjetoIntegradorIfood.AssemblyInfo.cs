@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoIntegradorIfood")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+37a54c4c8b3e53366b284e2fbfc7c61d6333d4f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d75b513e964d6860926e494f685fcb5a571234bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoIntegradorIfood")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoIntegradorIfood")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

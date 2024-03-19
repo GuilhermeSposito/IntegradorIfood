@@ -2,10 +2,7 @@
 using ProjetoIntegradorIfood.ClassesAuxiliares;
 using ProjetoIntegradorIfood.data;
 Console.ForegroundColor = ConsoleColor.White;
-if(Token.TokenDaSessao != null)
-{
-    Ifood.SetTimer();
-}
+//Ifood.SetTimer();
 
 
 while (true)
@@ -24,6 +21,9 @@ while (true)
             case 2:
                 Pulling.GetPullings();
                 break;
+            case 3:
+                await Ifood.SetPedido();
+                break; 
         }
 
 
