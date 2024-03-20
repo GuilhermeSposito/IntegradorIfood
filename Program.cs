@@ -2,7 +2,7 @@
 using ProjetoIntegradorIfood.ClassesAuxiliares;
 using ProjetoIntegradorIfood.data;
 Console.ForegroundColor = ConsoleColor.White;
-//Ifood.SetTimer();
+Ifood.SetTimer();
 
 
 while (true)
@@ -22,7 +22,7 @@ while (true)
                 Pulling.GetPullings();
                 break;
             case 3:
-                await Ifood.SetPedido();
+                await Ifood.GetPedido("c7924efa-1446-4f37-b2a2-f31ae67abe04");
                 break; 
         }
 

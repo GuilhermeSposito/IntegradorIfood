@@ -53,8 +53,7 @@ create table merchant(
 );
 
 create table customer(
-	id serial primary key ,
-  id_customer text,
+  id text,
   id_pedido text references pedidocompleto(id),
   name text,
   documentNumber text,
@@ -73,7 +72,7 @@ create table phone(
 
 
 create table Items(
-	item_id serial primary key, 
+  item_id serial primary key, 
   id_pedido text references pedidocompleto(id),
   index int, 
   id text, 
@@ -88,7 +87,7 @@ create table Items(
 );
 
 create table total(
-	id serial primary key,
+  id serial primary key,
   id_pedido text references pedidocompleto(id),
   additionalFees float, 
   subTotal float, 
@@ -98,14 +97,14 @@ create table total(
 );
 
 create table Payments(
-	id serial primary key,
+  id serial primary key,
   id_pedido text references pedidocompleto(id),
   prepaid float,
   pending int
 );
 
 create table Methods(
-	id serial primary key,
+  id serial primary key,
   payments_id int references payments(id),
   id_pedido text references pedidocompleto(id),
   value float,
@@ -123,12 +122,12 @@ create table card(
 );
 
 create table AdditionalInfo(
-	id serial primary key,
+  id serial primary key,
   id_pedido text references pedidocompleto(id)
 );
 
 create table metadata(
-	id serial primary key, 
+  id serial primary key, 
   id_additionalInfo int references additionalinfo(id),
   id_pedido text references pedidocompleto(id),
   developerId text,
@@ -137,3 +136,19 @@ create table metadata(
 );
 
 
+
+delete from coordinates;
+delete from deliveryaddress;
+delete from delivery;
+delete from merchant;
+delete from phone;
+delete from customer;
+delete from methods;
+delete from payments;
+delete from items;
+delete from total;
+delete from metadata;
+delete from additionalinfo;
+delete from pedidocompleto;
+
+                                  

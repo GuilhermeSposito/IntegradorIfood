@@ -50,8 +50,6 @@ public class pedidocompleto //Classe para inserir na tabela pedido completo no b
     public pedidocompleto() { }
 }
 
-//classe iniciando com letra minúscula para conseguirmos desserializar o json que vem 
-
 public class Delivery
 {
     public int  id { get; set; }
@@ -121,12 +119,8 @@ public class Merchant
     public Merchant(){}
 }
 
-[Table("customer")]
 public class Customer
 {
-    [Column("id")]
-    public int id_customer { get; set; }
-    [Column("id_customer")]
     public string? id { get; set; }  
     public string? id_pedido { get; set; }  
     public string? name { get; set; }
@@ -145,55 +139,69 @@ public class Customer
 public class Phone
 {
     public int id { get; set; }
-    public int id_customer{ get; set; }
     public string? id_pedido { get; set; }
     public string? number { get; set; }
     public string? localizer { get; set; }
     [Column("localizerexpiration")]
     public string? localizerExpiration { get; set; }
+    public string id_customer_pedido { get; set; }
     public Phone() { }
 }
 
+[Table("items")]
 public class Items
 {
-    public int item_id { get; set; }
     public string? id_pedido { get; set; }
     public int index { get; set; }
     public string? id { get; set; }
+    [Column("uniqueid")]
     public string? uniqueId { get; set; }
     public string? name { get; set; }
     public int quantity { get; set; }
     public string? unit { get; set; }
+    [Column("unitprice")]
     public float unitPrice { get; set; }
+    [Column("optionsprice")]
+
     public float optionsPrice { get; set; }
+    [Column("totalprice")]
+
     public float totalPrice { get; set; }
     public float price { get; set; }
     
     public Items() { }
 }
 
+[Table("total")]
 public class Total
 {
     public int id { get; set; }
     public string? id_pedido { get; set; }
+    [Column("additionalfees")]
     public float additionalFees { get; set; }
+    [Column("subtotal")]
     public float subTotal { get; set; }
+    [Column("deliveryfee")]
     public float deliveryFee { get; set; }
     public int benefits { get; set; }
+    [Column("orderamount")]
     public float orderAmount { get; set; }
 
     public Total(){}
 }
 
+[Table("payments")]
 public class Payments
 {
-    public int id { get; set; }
+    public int id { get; set; } 
     public string? id_pedido { get; set; }
     public float prepaid { get; set; }
     public int pending { get; set; }
+    [NotMapped]
     public List<Methods> methods { get; set; } = new List<Methods>();
 }
 
+[Table("methods")]
 public class Methods
 {
     public int id { get; set; }
@@ -204,6 +212,7 @@ public class Methods
     public string? method { get; set; }
     public bool prepaid { get; set; }
     public string type { get; set; }
+    [NotMapped]
     public Card card { get; set; } = new Card();
 
     public Methods() { }
@@ -219,21 +228,29 @@ public class Card
     public Card() { }
 }
 
+[Table("additionalinfo")]
 public class AdditionalInfo
 {
-    public int id { get; set; }
+    public int id { get; set; } 
     public string? id_pedido { get; set; }
+    [NotMapped]
     public metadata metadata { get; set; } = new metadata();    
 }
 
+[Table("metadata")]
 public class metadata
 {
-    public int id { get; set; }
-    public int id_additionalInfo { get; set; }
+    public int id { get; set; } 
+    public int id_additionalinfo { get; set; }
     public string? id_pedido { get; set; }
-    public string? developerId { get; set; } 
-   public string? customerEmail { get; set; } 
-   public string? developerEmail { get; set; }
+    [Column("developerid")]
+    public string? developerId { get; set; }
+    [Column("customeremail")]
+
+    public string? customerEmail { get; set; }
+    [Column("developeremail")]
+
+    public string? developerEmail { get; set; }
 
     public metadata() { }
 }
