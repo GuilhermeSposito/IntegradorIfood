@@ -22,7 +22,7 @@ while (true)
                 Pulling.GetPullings();
                 break;
             case 3:
-                await Ifood.GetPedido("c7924efa-1446-4f37-b2a2-f31ae67abe04");
+                await Ifood.GetPedido("fefcb2b0-f56f-4080-aa1d-80406ef0ecde");
                 break; 
         }
 

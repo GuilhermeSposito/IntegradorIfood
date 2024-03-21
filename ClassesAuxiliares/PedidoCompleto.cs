@@ -46,7 +46,8 @@ public class pedidocompleto //Classe para inserir na tabela pedido completo no b
     public bool isTest { get; set; }
     [Column("saleschannel")]
     public string salesChannel { get; set; }
-
+    [Column("statuscode")]
+    public string StatusCode { get; set; }
     public pedidocompleto() { }
 }
 
